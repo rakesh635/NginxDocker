@@ -1,13 +1,13 @@
 FROM ubuntu
 
 # Install Nginx.
-RUN apt-get update \
-    && apt-get install -y software-properties-common \
-    && apt-add-repository -y ppa:nginx/stable \
-    && apt-get update \
-    && apt-get install -y nginx \
-    && apt-get install -y curl \
-    && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && \
+    apt-get install -y software-properties-common && \
+    apt-add-repository -y ppa:nginx/stable && \
+    pt-get update && \
+    apt-get install -y nginx && \
+    apt-get install -y curl && \
+    rm -rf /var/lib/apt/lists/*
 
 ADD /code/ /var/www/html/
 ADD /nginx/ /etc/nginx/
