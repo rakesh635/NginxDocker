@@ -10,4 +10,9 @@ mysecondpage.com as locahost/2.html
 
 mythirdpage.com as locahost/3.html
 
-in HOST machine.
+,in HOST machine.
+
+
+# Configured with Vagrant:
+
+This can be configured with , https://github.com/rakesh635/NginxVagrant.
