@@ -9,7 +9,7 @@ RUN apt-get update \
     && apt-get install -y curl \
     && rm -rf /var/lib/apt/lists/*
 
-ADD /code/ /data/www
+#ADD /code/ /data/www
 
 RUN rm /etc/nginx/sites-enabled/default
 RUN ln -sf /dev/stdout /var/log/nginx/access.log \
