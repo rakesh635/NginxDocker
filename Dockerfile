@@ -1,7 +1,8 @@
 FROM ubuntu
 
 # Install Nginx.
-RUN apt-get update && \
+RUN apt-get upgrade && \
+    apt-get update && \
     apt-get install -y software-properties-common && \
     apt-add-repository -y ppa:nginx/stable && \
     pt-get update && \
