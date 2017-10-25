@@ -1,4 +1,4 @@
-FROM Dockerfile/ubuntu
+FROM ubuntu
 
 # Install Nginx.
 RUN \
